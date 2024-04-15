@@ -71,7 +71,7 @@ kafka-console-consumer --bootstrap-server localhost:29092 --topic test --from-be
 And checking logs:
 
 ```bash
-echo "Rui:" | kcat -b localhost:29092 -t test -Z -K:
+cat ./data/test-0/*.log
 ```
 
 # Clean up
